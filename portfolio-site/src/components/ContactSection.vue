@@ -1,15 +1,15 @@
 <template>
-  <section id="contact" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="contact" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
       <h2
-        class="text-3xl md:text-4xl font-bold text-center text-primary mb-12 animate-item"
+        class="text-3xl md:text-4xl font-bold text-center text-primary mb-16 animate-item"
         data-delay="0"
       >
         Future Goals
       </h2>
-      <div class="max-w-3xl mx-auto text-center">
+      <div class="max-w-4xl mx-auto text-center">
         <p
-          class="text-lg text-secondary leading-relaxed animate-item"
+          class="text-lg text-secondary leading-relaxed animate-item bg-white p-8 rounded-2xl shadow-lg"
           data-delay="200"
           v-html="formattedGoals"
         ></p>

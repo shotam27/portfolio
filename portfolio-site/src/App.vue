@@ -10,7 +10,6 @@
     <div class="fade-section" data-delay="0">
       <HeroSection 
         :title="portfolioData.personal.title"
-        :subtitle="portfolioData.personal.subtitle"
       />
     </div>
 

@@ -1,8 +1,32 @@
-# .
+# Portfolio Site
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue.js + Tailwind CSSで作成したポートフォリオサイト
 
-## Recommended IDE Setup
+## 🚀 GitHub Pagesでの公開手順
+
+### 1. GitHubリポジトリの作成
+```bash
+# GitHubで新しいリポジトリ 'portfolio' を作成
+# 現在のディレクトリをGitリポジトリとして初期化
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/shotam27/portfolio.git
+git push -u origin main
+```
+
+### 2. GitHub Pagesの設定
+1. GitHubリポジトリページの **Settings** タブに移動
+2. 左側メニューの **Pages** をクリック
+3. **Source** を **GitHub Actions** に設定
+4. コードをpushすると自動的にデプロイされます
+
+### 3. 公開URL
+設定完了後、以下のURLでアクセス可能：
+`https://shotam27.github.io/portfolio/`
+
+## 🛠 開発環境
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 

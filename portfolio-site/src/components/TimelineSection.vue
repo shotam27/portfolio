@@ -1,13 +1,13 @@
 <template>
-  <section id="timeline" class="py-20 bg-light">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="timeline" class="py-24 bg-light">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
       <h2
-        class="text-3xl md:text-4xl font-bold text-center text-primary mb-12 animate-item"
+        class="text-3xl md:text-4xl font-bold text-center text-primary mb-16 animate-item"
         data-delay="0"
       >
         Timeline
       </h2>
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-4xl mx-auto">
         <div class="relative">
           <!-- Timeline line -->
           <div

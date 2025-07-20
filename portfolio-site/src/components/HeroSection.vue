@@ -3,23 +3,23 @@
     id="home"
     class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-secondary text-white"
   >
-    <div class="text-center px-4 max-w-4xl mx-auto">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-item" data-delay="0">
+    <div class="text-center px-6 max-w-5xl mx-auto">
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 leading-relaxed animate-item whitespace-pre-line"
+        data-delay="0"
+      >
         {{ title }}
       </h1>
-      <p class="text-xl md:text-2xl mb-8 text-light/90 animate-item" data-delay="200">
-        {{ subtitle }}
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-item" data-delay="400">
+      <div class="flex flex-col sm:flex-row gap-6 justify-center animate-item" data-delay="200">
         <a
           href="#projects"
-          class="bg-accent text-primary px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-all transform hover:scale-105"
+          class="bg-accent text-primary px-10 py-4 rounded-xl font-semibold text-lg hover:bg-accent/90 transition-all transform hover:scale-105 shadow-lg"
         >
           プロジェクトを見る
         </a>
         <a
           href="#contact"
-          class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all transform hover:scale-105"
+          class="border-2 border-white text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg"
         >
           お問い合わせ
         </a>
@@ -33,10 +33,6 @@ export default {
   name: 'HeroSection',
   props: {
     title: {
-      type: String,
-      required: true,
-    },
-    subtitle: {
       type: String,
       required: true,
     },
