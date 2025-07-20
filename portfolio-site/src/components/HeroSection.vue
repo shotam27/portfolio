@@ -3,13 +3,23 @@
     id="home"
     class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-secondary text-white"
   >
-    <div class="text-center px-6 max-w-5xl mx-auto">
-      <h1
-        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 leading-relaxed animate-item whitespace-pre-line"
+    <div class="text-center px-6 max-w-7xl mx-auto">
+      <div
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 animate-item flex flex-col items-center gap-3 md:gap-4"
         data-delay="0"
       >
-        {{ title }}
-      </h1>
+        <div
+          v-for="(line, index) in title"
+          :key="index"
+          :class="
+            line === '×'
+              ? 'text-accent text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal'
+              : 'leading-tight'
+          "
+        >
+          {{ line }}
+        </div>
+      </div>
       <div class="flex flex-col sm:flex-row gap-6 justify-center animate-item" data-delay="200">
         <a
           href="#projects"
@@ -33,7 +43,7 @@ export default {
   name: 'HeroSection',
   props: {
     title: {
-      type: String,
+      type: Array,
       required: true,
     },
   },
@@ -93,5 +103,35 @@ export default {
 
 .animate-item:nth-child(3).animate-in {
   transform: translateY(0);
+}
+
+/* タイトル行のスタイル */
+.title-line {
+  transition: all 0.3s ease;
+}
+
+.title-line:hover {
+  transform: scale(1.05);
+}
+
+/* タイトルのレスポンシブ調整 */
+@media (max-width: 768px) {
+  .title-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .title-container .title-item {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .title-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>
