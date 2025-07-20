@@ -107,6 +107,10 @@
       ]
     }
   ],
+  "contact": {
+    "email": "neshotam27@gmail.com",
+    "github": "https://github.com/shotam27"
+  },
   "navigation": [
     { "href": "#home", "label": "Home" },
     { "href": "#about", "label": "About" },

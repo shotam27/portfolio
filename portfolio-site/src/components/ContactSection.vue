@@ -5,12 +5,37 @@
         class="text-3xl md:text-4xl font-bold text-center text-primary mb-16 animate-item"
         data-delay="0"
       >
-        Future Goals
+        Contact & Future Goals
       </h2>
+      
+      <!-- Contact Information -->
+      <div class="max-w-4xl mx-auto mb-12">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 animate-item" data-delay="100">
+          <a
+            :href="`mailto:${contact.email}`"
+            class="flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg"
+          >
+            <span class="text-xl">📧</span>
+            {{ contact.email }}
+          </a>
+          <a
+            :href="contact.github"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-3 bg-gray-800 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-700 transition-all transform hover:scale-105 shadow-lg"
+          >
+            <span class="text-xl">🐙</span>
+            GitHub
+          </a>
+        </div>
+      </div>
+      
+      <!-- Future Goals -->
       <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-2xl font-bold text-primary mb-6 animate-item" data-delay="200">Future Goals</h3>
         <p
-          class="text-lg text-secondary leading-relaxed animate-item bg-white p-8 rounded-2xl shadow-lg"
-          data-delay="200"
+          class="text-lg text-secondary leading-relaxed animate-item bg-gray-50 p-8 rounded-2xl shadow-lg"
+          data-delay="300"
           v-html="formattedGoals"
         ></p>
       </div>
@@ -24,6 +49,10 @@ export default {
   props: {
     futureGoals: {
       type: String,
+      required: true,
+    },
+    contact: {
+      type: Object,
       required: true,
     },
   },

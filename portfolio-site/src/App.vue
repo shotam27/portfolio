@@ -34,7 +34,10 @@
 
     <!-- Contact Section -->
     <div class="fade-section" data-delay="800">
-      <ContactSection :future-goals="portfolioData.personal.futureGoals" />
+      <ContactSection 
+        :future-goals="portfolioData.personal.futureGoals"
+        :contact="portfolioData.contact"
+      />
     </div>
 
     <!-- Footer -->
